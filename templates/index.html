@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/static/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/form.css"/>
+    <title>Translator</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Главная </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper">
+    <form class="card border-primary mb-3 myform" action="/" method="post">
+        <h3 class="card-header">Translate</h3>
+        <div class="card-body">
+            <textarea name="textarea" class="form-control">{{ data.source }}</textarea>
+        </div>
+        <div class="twobutton">
+            <div class="confirm">
+                <button class="btn btn-lg btn-primary" type="submit" name="action" value="ru">To RU</button>
+            </div>
+            <div class="confirm">
+                <button class="btn btn-lg btn-primary" type="submit" name="action" value="en">To EN</button>
+            </div>
+        </div>
+    </form>
+    <div class="card border-primary mb-3 myform">
+        <h3 class="card-header">Result</h3>
+        <div class="card-body">
+            <textarea name="result_area" class="form-control">{{ data.result }}</textarea>
+        </div>
+    </div>
+</div>
+</body>
+</html>

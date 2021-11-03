@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+	margin-top: 80px;
+    margin-bottom: 80px;
+}
+.card-body{
+  flex: 3 0 0;
+}
+.myform {
+  flex: 1 0 auto;
+  min-height: 500px;
+  margin: 10px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: 100%;
+  padding: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: 5px;
+}
+.twobutton {
+  width: 100%;
+  flex: 0 1 auto;
+  padding: 1rem 1rem;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.confirm{
+  flex: 1 0 0;
+}
+.confirm:first-child {padding-right: 10px}
+.confirm:last-child {padding-left: 10px}
+.btn-lg{
+  width:100%;
+}
